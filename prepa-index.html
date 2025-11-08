@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prépa Sciences Po 2025-2026 - Présentation</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+nav {
+    background-color: #006666;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.nav-button {
+    background-color: #008B8B;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: 2px solid transparent;
+}
+
+.nav-button:hover {
+    background-color: #20B2AA;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nav-button.active {
+    background-color: #FFD700;
+    color: #006666;
+    border-color: #FFA500;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.content-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #008B8B;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #20B2AA;
+}
+
+h3 {
+    color: #006666;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    background-color: #FFFACD;
+    padding: 1.5rem;
+    border-left: 4px solid #FFD700;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.important-note {
+    background-color: #E0F7FA;
+    padding: 1rem;
+    border-left: 4px solid #008B8B;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.quote {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-left: 4px solid #008B8B;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: bold;
+    color: #008B8B;
+    margin-top: 0.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.feature-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #006666;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+ul {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+strong {
+    color: #008B8B;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .nav-container {
+        flex-direction: column;
+    }
+    .nav-button {
+        width: 100%;
+        text-align: center;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Prépa Sciences Po 2025-2026</h1>
+            <p class="subtitle">La 1ère Prépa SciencesPo - Programmes et contenus</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="prepa-index.html" class="nav-button active">Accueil</a>
+            <a href="prepa-association.html" class="nav-button">L'Association</a>
+            <a href="prepa-programme.html" class="nav-button">Le Programme</a>
+            <a href="prepa-modalites.html" class="nav-button">Modalités</a>
+            <a href="prepa-modules.html" class="nav-button">Les Modules</a>
+            <a href="prepa-ressources.html" class="nav-button">Ressources</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <h2>Bienvenue à la Prépa Sciences Po</h2>
+            
+            <div class="quote">
+                <p>« Le moins que l'on puisse attendre d'un homme intelligent, c'est qu'il exige de passer les plus difficiles épreuves qui vont l'initier à la Connaissance. »</p>
+            </div>
+
+            <div class="quote">
+                <p>« Le moins qu'on puisse attendre d'un Homme cultivé, c'est qu'il connaisse son temps. »</p>
+                <p class="quote-author">— Émile BOUTMY, fondateur de Sciences Po</p>
+            </div>
+
+            <div class="intro-text">
+                <p>Enseignants diplômés de Sciences Po Paris, nous avons développé depuis les années 1980 des moyens de préparation qui ont permis à plus de 1000 élèves d'intégrer Sciences Po Paris ou un IEP de région.</p>
+                
+                <p>Notre préparation est <strong>exclusivement en distanciel</strong>, totalement compatible avec votre activité scolaire courante au lycée. Vous bénéficiez d'un accompagnement personnalisé tout au long de l'année scolaire 2025-2026.</p>
+            </div>
+
+            <div class="important-note">
+                <p><strong>Stage annuel de préparation pour les élèves de terminale</strong></p>
+                <p>Programme complet avec 10 modules thématiques, visioconférences hebdomadaires, QCM d'évaluation et suivi parental en temps réel.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Nos atouts</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-title">🎓 Expertise reconnue</div>
+                    <div class="feature-content">
+                        Enseignants diplômés de Sciences Po Paris avec plus de 40 ans d'expérience dans la préparation aux concours.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-title">💻 100% en ligne</div>
+                    <div class="feature-content">
+                        Visioconférences hebdomadaires, fiches techniques PDF, articles de presse et QCM d'évaluation en ligne.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-title">📊 Suivi personnalisé</div>
+                    <div class="feature-content">
+                        Évaluations régulières, résultats transmis aux parents, coaching individuel par des professionnels.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-title">🎯 Taux de réussite élevé</div>
+                    <div class="feature-content">
+                        Plus de 1000 candidats préparés avec succès depuis le lancement de notre préparation.
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-title">📚 Contenu complet</div>
+                    <div class="feature-content">
+                        10 modules couvrant tous les aspects : méthodologie, philosophie politique, droit, économie, histoire, relations internationales...
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-title">🌍 Préparation ciblée</div>
+                    <div class="feature-content">
+                        Préparation adaptée à Sciences Po Paris ET au réseau des 7 IEP à concours commun avec leurs thèmes 2025.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Ce que Sciences Po attend des candidats</h2>
+            
+            <div class="intro-text">
+                <p>Selon le site de Sciences Po Paris, les candidats doivent être capables de :</p>
+                <ul>
+                    <li>Démontrer leur connaissance du projet éducatif de Sciences Po</li>
+                    <li>Démontrer une forte motivation pour les sciences humaines et sociales</li>
+                    <li>S'intéresser à l'actualité française et internationale et aux enjeux contemporains</li>
+                    <li>Mobiliser et mettre en relation des connaissances pertinentes</li>
+                    <li>Démontrer des qualités d'expression orale et écrite, mais aussi des qualités d'écoute</li>
+                    <li>Faire preuve de curiosité intellectuelle et d'esprit critique</li>
+                    <li>Montrer leur capacité à développer une réflexion personnelle</li>
+                    <li>Avoir goût pour l'innovation et pour la pluridisciplinarité</li>
+                    <li>Avoir une bonne maîtrise du français et/ou de l'anglais en fonction des programmes choisis</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Notre préparation vous permettra de développer toutes ces compétences !</strong></p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Dates clés 2025-2026</h2>
+            
+            <div class="important-note">
+                <h3>Sciences Po Paris</h3>
+                <ul>
+                    <li><strong>15 janvier 2026</strong> : Ouverture Parcoursup</li>
+                    <li><strong>13 mars 2026</strong> : Date limite de formulation des vœux</li>
+                    <li><strong>2 avril 2026</strong> : Validation des dossiers</li>
+                    <li><strong>Avril-mai 2026</strong> : Entretiens oraux</li>
+                </ul>
+
+                <h3>Réseau 7 IEP à concours commun</h3>
+                <ul>
+                    <li><strong>Thèmes 2025</strong> : « Le vivant » et « Solidarités »</li>
+                    <li><strong>Journées Portes Ouvertes</strong> : De novembre 2025 à mars 2026</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Prêt à vous lancer ?</h2>
+            
+            <div class="intro-text">
+                <p>Découvrez notre association, notre programme complet et nos modalités pratiques en naviguant dans les différentes sections de ce site.</p>
+                
+                <p>Nous vous accompagnons tout au long de votre préparation avec rigueur et bienveillance, dans la tradition d'excellence pédagogique qui a fait nos preuves depuis plus de 40 ans.</p>
+            </div>
+
+            <div class="quote">
+                <p><strong>Nous vous souhaitons succès et bon travail !</strong></p>
+                <p class="quote-author">— L'équipe de la Prépa</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Fiche Technique - Préparation à Sciences Po</p>
+            <p>Propriété intellectuelle & © KES - V240-925</p>
+            <p>Prépa Sciences Po - Komensky Elite Switzerland</p>
+        </div>
+    </footer>
+</body>
+</html>

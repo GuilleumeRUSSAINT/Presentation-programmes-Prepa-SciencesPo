@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalités - Prépa Sciences Po</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+header { background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%); color: white; padding: 2rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.header-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+.subtitle { font-size: 1.2rem; opacity: 0.9; font-style: italic; }
+nav { background-color: #006666; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.nav-button { background-color: #008B8B; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; font-weight: 500; border: 2px solid transparent; }
+.nav-button:hover { background-color: #20B2AA; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.nav-button.active { background-color: #FFD700; color: #006666; border-color: #FFA500; font-weight: bold; }
+main { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+.content-box { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+h2 { color: #008B8B; font-size: 2rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #20B2AA; }
+h3 { color: #006666; font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+.intro-text { font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 1.5rem; }
+.step-box { background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%); padding: 1.5rem; border-left: 4px solid #008B8B; border-radius: 5px; margin: 1.5rem 0; }
+.step-number { font-size: 2rem; font-weight: bold; color: #008B8B; margin-bottom: 0.5rem; }
+.step-title { font-size: 1.3rem; font-weight: bold; color: #006666; margin-bottom: 0.5rem; }
+.timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.timeline-item { background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%); color: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+.timeline-item:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+.timeline-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 1rem; text-align: center; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; }
+.timeline-content { font-size: 0.95rem; line-height: 1.6; }
+.important-note { background-color: #E0F7FA; padding: 1rem; border-left: 4px solid #008B8B; border-radius: 5px; margin: 1rem 0; }
+.highlight { background-color: #FFFACD; padding: 1.5rem; border-left: 4px solid #FFD700; border-radius: 5px; margin: 1.5rem 0; font-style: italic; }
+.quote { background-color: #f0f0f0; padding: 1.5rem; border-left: 4px solid #008B8B; font-style: italic; font-size: 1.1rem; margin: 2rem 0; }
+.quote-author { text-align: right; font-weight: bold; color: #008B8B; margin-top: 0.5rem; }
+footer { background-color: #006666; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+.footer-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+ul { margin-left: 2rem; margin-top: 1rem; }
+li { margin-bottom: 0.5rem; }
+strong { color: #008B8B; }
+.timeline-item strong { color: #FFD700; }
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    .nav-container { flex-direction: column; }
+    .nav-button { width: 100%; text-align: center; }
+    .timeline { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Modalités pratiques</h1>
+            <p class="subtitle">Fonctionnement et organisation du stage</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="prepa-index.html" class="nav-button">Accueil</a>
+            <a href="prepa-association.html" class="nav-button">L'Association</a>
+            <a href="prepa-programme.html" class="nav-button">Le Programme</a>
+            <a href="prepa-modalites.html" class="nav-button active">Modalités</a>
+            <a href="prepa-modules.html" class="nav-button">Les Modules</a>
+            <a href="prepa-ressources.html" class="nav-button">Ressources</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <h2>Comment fonctionne la préparation ?</h2>
+            
+            <div class="highlight">
+                <p><strong>Stage exclusivement en distanciel, totalement compatible avec l'activité scolaire courante au lycée.</strong></p>
+            </div>
+
+            <div class="intro-text">
+                <p>Notre préparation s'adapte à votre emploi du temps de terminale. Tous les cours se déroulent en ligne, vous permettant de suivre la préparation où que vous soyez, sans perdre de temps en déplacements.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Le début de la préparation</h2>
+            
+            <div class="step-box">
+                <div class="step-title">🎯 Premier rendez-vous</div>
+                <p>L'enseignant-contact propose un rendez-vous pour une visioconférence WhatsApp de 45 minutes avec les parents. C'est l'occasion de :</p>
+                <ul>
+                    <li>Faire connaissance</li>
+                    <li>Bien préciser la façon de réussir le stage</li>
+                    <li>Donner de premières indications de cours</li>
+                    <li>Répondre à toutes vos questions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Les séquences de progression</h2>
+            
+            <div class="intro-text">
+                <p>Le stage se compose de <strong>30 séquences de progression</strong> qui se déroulent tout au long de l'année scolaire. Voici comment se déroule chaque séquence :</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">1️⃣</div>
+                <div class="step-title">Le mercredi matin : Réception des supports</div>
+                <p>Chaque séquence est lancée par un mail du mercredi matin, comprenant :</p>
+                <ul>
+                    <li><strong>Fiches Techniques</strong> au format PDF portant sur des points de cours</li>
+                    <li>Articles de presse complémentaires au format PDF</li>
+                    <li>Documents d'approfondissement selon les besoins</li>
+                </ul>
+                <p style="margin-top: 1rem;">Ces Fiches Techniques sont le support de ce qui sera discuté lors de l'horaire de cours en visio suivant.</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">2️⃣</div>
+                <div class="step-title">Pendant la semaine : Étude personnelle</div>
+                <p>Vous étudiez les fiches techniques à votre rythme et préparez vos questions pour la visioconférence.</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">3️⃣</div>
+                <div class="step-title">La visioconférence : Échange et approfondissement</div>
+                <p>Rendez-vous hebdomadaire de <strong>1H à 1H30</strong> avec votre enseignant selon l'horaire que vous avez choisi. Durant cette séance :</p>
+                <ul>
+                    <li>Approfondissement des points de cours</li>
+                    <li>Échanges sur les concepts clés</li>
+                    <li>Réponses à vos questions</li>
+                    <li>Mise en perspective avec l'actualité</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">4️⃣</div>
+                <div class="step-title">Le QCM de validation</div>
+                <p>Chaque séquence se termine par un <strong>QCM d'évaluation</strong> :</p>
+                <ul>
+                    <li>Envoyé par mail ou via un formulaire en ligne (Google Form ou Survey Monkey)</li>
+                    <li>Permet de valider vos acquis</li>
+                    <li>Le retour de ce QCM permet de débuter la séquence suivante</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <div class="step-number">5️⃣</div>
+                <div class="step-title">Le suivi des résultats</div>
+                <p>Chacun de ces QCM compte pour la note finale de préparation. Les référents adultes des élèves sont <strong>informés en temps réel</strong> des résultats obtenus.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Organisation pratique</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">📅 Calendrier</div>
+                    <div class="timeline-content">
+                        <strong>Année scolaire 2025-2026</strong><br><br>
+                        30 séquences hebdomadaires<br>
+                        Hors vacances scolaires zone Paris
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">⏰ Rythme</div>
+                    <div class="timeline-content">
+                        <strong>1 visioconférence par semaine</strong><br><br>
+                        Durée : 1H à 1H30<br>
+                        Horaire choisi avec vous
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">📚 Supports</div>
+                    <div class="timeline-content">
+                        <strong>Documents PDF</strong><br><br>
+                        Fiches techniques de cours<br>
+                        Articles de presse<br>
+                        Vidéos complémentaires
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">✅ Évaluation</div>
+                    <div class="timeline-content">
+                        <strong>QCM hebdomadaires</strong><br><br>
+                        Notés et comptant pour la note finale<br>
+                        Appréciations mensuelles
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">👨‍👩‍👧‍👦 Suivi parental</div>
+                    <div class="timeline-content">
+                        <strong>Information en temps réel</strong><br><br>
+                        Tous les mails transmis<br>
+                        Résultats des QCM communiqués
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">👨‍🏫 Coaching</div>
+                    <div class="timeline-content">
+                        <strong>Enseignants diplômés</strong><br><br>
+                        Sciences Po Paris<br>
+                        Accompagnement personnalisé
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Compatibilité avec le lycée</h2>
+            
+            <div class="intro-text">
+                <p>Notre préparation est conçue pour s'intégrer parfaitement à votre année de terminale :</p>
+            </div>
+
+            <div class="important-note">
+                <h3>✓ Aucun déplacement nécessaire</h3>
+                <p>Tout se passe en ligne, depuis chez vous</p>
+
+                <h3>✓ Horaires flexibles</h3>
+                <p>Vous choisissez le créneau qui vous convient le mieux</p>
+
+                <h3>✓ Travail personnel adapté</h3>
+                <p>Étude des documents à votre rythme pendant la semaine</p>
+
+                <h3>✓ Pas de surcharge</h3>
+                <p>Une séance hebdomadaire de 1H30 maximum + temps d'étude personnelle</p>
+
+                <h3>✓ Période de vacances respectée</h3>
+                <p>Pas de cours pendant les vacances scolaires de la zone Paris</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>L'équipe pédagogique</h2>
+            
+            <div class="intro-text">
+                <p>Notre équipe, qui communique souvent sous le nom générique et facétieux de <strong>« Guillaume RUSSAINT »</strong>, est composée d'enseignants diplômés de Sciences Po Paris ayant une expérience significative dans la préparation aux concours.</p>
+            </div>
+
+            <div class="quote">
+                <p>« Nous développons et mettons à jour depuis des années des moyens de préparation qui ont permis à ce jour à plus de 1000 élèves d'intégrer soit l'IEP de Paris soit un IEP de région. »</p>
+                <p class="quote-author">— L'équipe de la Prépa</p>
+            </div>
+
+            <div class="important-note">
+                <p><strong>Contact :</strong> guillaume.russaint@proton.me</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Les outils utilisés</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">📹 Visioconférence</div>
+                    <div class="timeline-content">
+                        <strong>WhatsApp ou plateforme similaire</strong><br><br>
+                        Connexion simple et fiable<br>
+                        Qualité audio et vidéo optimale
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">📧 Email</div>
+                    <div class="timeline-content">
+                        <strong>Support principal</strong><br><br>
+                        Envoi des documents<br>
+                        Communication avec l'équipe
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">📝 QCM en ligne</div>
+                    <div class="timeline-content">
+                        <strong>Google Form ou Survey Monkey</strong><br><br>
+                        Évaluation hebdomadaire<br>
+                        Résultats instantanés
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">📄 Documents PDF</div>
+                    <div class="timeline-content">
+                        <strong>Format universel</strong><br><br>
+                        Fiches techniques<br>
+                        Articles de presse<br>
+                        Supports de cours
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Questions fréquentes</h2>
+            
+            <div class="step-box">
+                <div class="step-title">❓ Que faire si je rate une séance ?</div>
+                <p>Les documents sont envoyés à l'avance et restent accessibles. Vous pouvez étudier le contenu en autonomie et poser vos questions par email ou lors de la séance suivante.</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-title">❓ Combien de temps dois-je consacrer au travail personnel ?</div>
+                <p>Environ 2 à 3 heures par semaine pour étudier les fiches techniques et préparer les QCM. Ce temps s'ajuste en fonction de votre niveau et de vos objectifs.</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-title">❓ Les parents peuvent-ils suivre la progression ?</div>
+                <p>Oui, absolument. Tous les emails et résultats de QCM sont systématiquement transmis aux référents adultes. Des appréciations mensuelles sont également fournies.</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-title">❓ Puis-je préparer à la fois Sciences Po Paris et les IEP de région ?</div>
+                <p>Oui, notre préparation couvre les deux. Nous intégrons les thèmes du concours commun des 7 IEP (« le vivant » et « solidarités » en 2025) tout en vous préparant à l'oral de Sciences Po Paris.</p>
+            </div>
+
+            <div class="step-box">
+                <div class="step-title">❓ Que se passe-t-il en cas de difficulté sur un module ?</div>
+                <p>Vous pouvez poser vos questions par email à tout moment. L'enseignant y répondra rapidement et pourra adapter le contenu des séances suivantes à vos besoins.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Engagement et réussite</h2>
+            
+            <div class="highlight">
+                <p><strong>Notre promesse :</strong> Vous bénéficiez de moyens de préparation éprouvés qui vous ouvrent les meilleures chances de succès, dans la continuité d'une tradition pédagogique à la fois exigeante et bienveillante.</p>
+            </div>
+
+            <div class="intro-text">
+                <p>La réussite dépend de trois facteurs :</p>
+                <ul>
+                    <li><strong>Votre engagement</strong> : assiduité aux séances, étude régulière des documents, réalisation des QCM</li>
+                    <li><strong>Notre accompagnement</strong> : enseignants expérimentés, contenus de qualité, suivi personnalisé</li>
+                    <li><strong>La durée</strong> : une préparation sur toute l'année pour une progression solide et durable</li>
+                </ul>
+            </div>
+
+            <div class="quote">
+                <p>« Préparer Sciences Po exige un grand sang-froid vis à vis de ces "conseils", dont les bonnes intentions pavent l'enfer, selon une expression populaire pour une fois pleine de sagesse. Et une grande rigueur. »</p>
+                <p class="quote-author">— Richard Descoings, Directeur de Sciences Po de 1996 à 2012</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Fiche Technique - Préparation à Sciences Po</p>
+            <p>Propriété intellectuelle & © KES - V240-925</p>
+            <p>Prépa Sciences Po - Komensky Elite Switzerland</p>
+        </div>
+    </footer>
+</body>
+</html>

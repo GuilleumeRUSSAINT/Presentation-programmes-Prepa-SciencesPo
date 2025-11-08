@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Programme - Prépa Sciences Po</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+header { background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%); color: white; padding: 2rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.header-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+.subtitle { font-size: 1.2rem; opacity: 0.9; font-style: italic; }
+nav { background-color: #006666; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.nav-button { background-color: #008B8B; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; font-weight: 500; border: 2px solid transparent; }
+.nav-button:hover { background-color: #20B2AA; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.nav-button.active { background-color: #FFD700; color: #006666; border-color: #FFA500; font-weight: bold; }
+main { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+.content-box { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+h2 { color: #008B8B; font-size: 2rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #20B2AA; }
+h3 { color: #006666; font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+.timeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.timeline-item { background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%); color: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+.timeline-item:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+.timeline-title { font-size: 1.3rem; font-weight: bold; margin-bottom: 1rem; text-align: center; border-bottom: 2px solid rgba(255,255,255,0.5); padding-bottom: 0.5rem; }
+.timeline-content { font-size: 0.95rem; line-height: 1.6; }
+.intro-text { font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 1.5rem; }
+.highlight { background-color: #FFFACD; padding: 1.5rem; border-left: 4px solid #FFD700; border-radius: 5px; margin: 1.5rem 0; font-style: italic; }
+.important-note { background-color: #E0F7FA; padding: 1rem; border-left: 4px solid #008B8B; border-radius: 5px; margin: 1rem 0; }
+.warning { background-color: #FFE5E5; padding: 1rem; border-left: 4px solid #FF6B6B; border-radius: 5px; margin: 1rem 0; font-weight: bold; }
+footer { background-color: #006666; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+.footer-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+ul { margin-left: 2rem; margin-top: 1rem; }
+li { margin-bottom: 0.5rem; }
+strong { color: #008B8B; }
+.timeline-item strong { color: #FFD700; }
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    .nav-container { flex-direction: column; }
+    .nav-button { width: 100%; text-align: center; }
+    .timeline { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Le Programme</h1>
+            <p class="subtitle">Structure pédagogique et contenus du stage annuel</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="prepa-index.html" class="nav-button">Accueil</a>
+            <a href="prepa-association.html" class="nav-button">L'Association</a>
+            <a href="prepa-programme.html" class="nav-button active">Le Programme</a>
+            <a href="prepa-modalites.html" class="nav-button">Modalités</a>
+            <a href="prepa-modules.html" class="nav-button">Les Modules</a>
+            <a href="prepa-ressources.html" class="nav-button">Ressources</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <h2>Calendrier général prévisionnel 2025-2026</h2>
+            
+            <div class="warning">
+                <p>⚠️ <strong>ATTENTION :</strong> Toutes les modalités sont en cours d'évolution. Vous devez surveiller vous-mêmes les sites officiels de Sciences Po et des IEP !</p>
+            </div>
+
+            <h3>Journées Portes Ouvertes Sciences Po Paris</h3>
+            <div class="important-note">
+                <ul>
+                    <li><strong>Campus de Paris</strong> : mercredi 22 janvier 2025 (14h-18h)</li>
+                    <li><strong>Journée virtuelle</strong> : samedi 1er février 2025 (dès 9h)</li>
+                    <li><strong>Campus de Nancy</strong> : samedi 1er février 2025 (10h-16h)</li>
+                    <li><strong>Campus de Reims</strong> : samedi 1er février 2025 (14h-17h)</li>
+                </ul>
+            </div>
+
+            <h3>Réseau Sciences Po - 7 IEP à concours commun</h3>
+            <div class="important-note">
+                <p><strong>Journée en ligne commune</strong> : samedi 15 novembre 2025</p>
+                <ul>
+                    <li><strong>Aix-en-Provence</strong> : 31 janvier 2026</li>
+                    <li><strong>Lille</strong> : 31 janvier 2026</li>
+                    <li><strong>Rennes</strong> : 7 février 2026</li>
+                    <li><strong>Saint-Germain-en-Laye</strong> : 17 janvier 2026</li>
+                    <li><strong>Strasbourg</strong> : 7 mars 2026</li>
+                    <li><strong>Toulouse</strong> : 14 février 2026</li>
+                </ul>
+                <p><em>Nota : Bordeaux et Grenoble, ainsi que Fontainebleau sont à discuter ensemble sur l'opportunité de s'y présenter.</em></p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Modalités de concours Sciences Po Paris</h2>
+            
+            <h3>Inscription via Parcoursup (en cours d'évolution)</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">15 janvier 2026</div>
+                    <div class="timeline-content">
+                        <strong>Ouverture de Parcoursup</strong><br><br>
+                        Début des inscriptions pour Sciences Po Paris
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">13 mars 2026</div>
+                    <div class="timeline-content">
+                        <strong>Date limite</strong><br><br>
+                        Formulation des vœux sur Parcoursup
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">2 avril 2026</div>
+                    <div class="timeline-content">
+                        <strong>Validation des dossiers</strong><br><br>
+                        Date limite pour finaliser votre dossier
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Avril-mai 2026</div>
+                    <div class="timeline-content">
+                        <strong>Entretiens oraux</strong><br><br>
+                        Entretien de 25 minutes pour l'évaluation Sciences Po
+                    </div>
+                </div>
+            </div>
+
+            <h3>Système d'évaluation (sur 120 points au total)</h3>
+            <div class="important-note">
+                <p><strong>Phase 1 - Dossier scolaire (40 points)</strong></p>
+                <ul>
+                    <li>Épreuves anticipées du bac français</li>
+                    <li>Contrôle continu</li>
+                    <li>Parcours scolaire</li>
+                </ul>
+
+                <p style="margin-top: 1rem;"><strong>Phase 2 - Évaluation Sciences Po (80 points)</strong></p>
+                <ul>
+                    <li>Questions de motivation Parcoursup</li>
+                    <li>Entretien oral de 25 minutes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Structure pédagogique du stage annuel</h2>
+            
+            <div class="intro-text">
+                <p>Notre préparation s'étend sur toute l'année scolaire 2025-2026 et couvre l'intégralité des compétences requises pour réussir aux concours de Sciences Po Paris et des IEP de région.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">📅 Rythme</div>
+                    <div class="timeline-content">
+                        Une visioconférence chaque semaine selon votre horaire choisi + documents de travail envoyés en amont
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">📝 Évaluation</div>
+                    <div class="timeline-content">
+                        QCM hebdomadaire d'évaluation pour mesurer votre progression
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">👨‍👩‍👧‍👦 Suivi parental</div>
+                    <div class="timeline-content">
+                        Tous les mails et résultats QCM transmis aux parents ou adultes de référence
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">🎓 Coaching</div>
+                    <div class="timeline-content">
+                        Par enseignants diplômés de Sciences Po Paris
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Modalités pratiques de cours</h2>
+            
+            <div class="important-note">
+                <p><strong>Début des séquences</strong> : Chaque semaine, visioconférence de 1H à 1H30 (sauf vacances scolaires de la zone Paris)</p>
+                <p><strong>Durée</strong> : Programme étalé sur l'année scolaire 2025-2026</p>
+                <p><strong>Supports</strong> : Cours complets + vidéos + documents de travail (Fiches Techniques)</p>
+                <p><strong>Évaluation</strong> : QCM hebdos notés + appréciations mensuelles sur l'atteinte des objectifs</p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>Nota bene :</strong> Les Modules ne sont pas dispensés l'un après l'autre, mais lors de chaque séance, un ou plusieurs modules sont abordés en partie</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Déroulement d'une séquence de progression</h2>
+            
+            <div class="intro-text">
+                <h3>1. Le mercredi matin</h3>
+                <p>Vous recevez un mail comprenant des <strong>Fiches Techniques</strong> au format PDF qui portent sur des points de cours. Ces fiches sont le support de ce qui sera discuté lors de la visioconférence suivante. Elles sont souvent complétées par des articles de presse au même format PDF.</p>
+
+                <h3>2. Pendant la semaine</h3>
+                <p>Vous étudiez les fiches techniques à votre rythme et préparez vos questions pour la visioconférence.</p>
+
+                <h3>3. La visioconférence</h3>
+                <p>Rendez-vous hebdomadaire de 1H à 1H30 avec votre enseignant pour approfondir les points de cours, échanger et poser vos questions.</p>
+
+                <h3>4. Le QCM de validation</h3>
+                <p>Chaque séquence se termine par un QCM d'évaluation (souvent sous forme de Google Form ou Survey Monkey en ligne). C'est le retour de ce QCM qui permet de débuter la séquence suivante.</p>
+
+                <h3>5. Le suivi</h3>
+                <p>Chacun de ces QCM compte pour la note finale de préparation. Les référents adultes des élèves sont informés en temps réel des résultats obtenus.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>10 modules thématiques</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 1</div>
+                    <div class="timeline-content">
+                        <strong>Méthodologie</strong><br>
+                        Préparation et épreuves
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 2</div>
+                    <div class="timeline-content">
+                        <strong>Philosophie Politique</strong><br>
+                        Machiavel, Hobbes, Locke, Rousseau, Tocqueville
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 3</div>
+                    <div class="timeline-content">
+                        <strong>Droit des institutions</strong><br>
+                        Fondamentaux juridiques et régimes politiques
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 4</div>
+                    <div class="timeline-content">
+                        <strong>Questions européennes</strong><br>
+                        UE, Conseil de l'Europe, institutions
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 5</div>
+                    <div class="timeline-content">
+                        <strong>Questions sociales</strong><br>
+                        Sécurité sociale, syndicats, solidarités
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 6</div>
+                    <div class="timeline-content">
+                        <strong>Économie Politique</strong><br>
+                        Courants économiques et politiques contemporaines
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 7</div>
+                    <div class="timeline-content">
+                        <strong>Questions Internationales</strong><br>
+                        ONU, OTAN, justice internationale
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 8</div>
+                    <div class="timeline-content">
+                        <strong>Histoire XIXe-XXe siècles</strong><br>
+                        Régimes politiques en France et Europe
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 9</div>
+                    <div class="timeline-content">
+                        <strong>Préparation à l'anglais</strong><br>
+                        Traduction et vocabulaire spécialisé
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Module 10</div>
+                    <div class="timeline-content">
+                        <strong>Préparation à l'oral</strong><br>
+                        Sciences Po Paris - Simulations d'entretiens
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <p>Pour plus de détails sur chaque module, consultez la page <a href="prepa-modules.html" style="color: #008B8B; font-weight: bold;">Les Modules</a></p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Thèmes du concours commun 7 IEP 2025</h2>
+            
+            <div class="important-note">
+                <h3>🌱 Thème 1 : « Le vivant »</h3>
+                <p>Approche pluridisciplinaire de la notion de vivant : enjeux écologiques, bioéthiques, philosophiques et politiques.</p>
+
+                <h3>🤝 Thème 2 : « Solidarités »</h3>
+                <p>Exploration des formes de solidarité : sociale, économique, internationale, et leurs évolutions contemporaines.</p>
+            </div>
+
+            <div class="intro-text">
+                <p>Notre préparation intègre systématiquement ces deux thèmes dans les différents modules pour vous permettre de briller au concours commun des 7 IEP.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Fiche Technique - Préparation à Sciences Po</p>
+            <p>Propriété intellectuelle & © KES - V240-925</p>
+            <p>Prépa Sciences Po - Komensky Elite Switzerland</p>
+        </div>
+    </footer>
+</body>
+</html>

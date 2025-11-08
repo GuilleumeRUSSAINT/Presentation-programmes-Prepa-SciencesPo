@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources - Prépa Sciences Po</title>
+    <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+header { background: linear-gradient(135deg, #008B8B 0%, #20B2AA 100%); color: white; padding: 2rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.header-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+.subtitle { font-size: 1.2rem; opacity: 0.9; font-style: italic; }
+nav { background-color: #006666; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+.nav-button { background-color: #008B8B; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; transition: all 0.3s ease; font-weight: 500; border: 2px solid transparent; }
+.nav-button:hover { background-color: #20B2AA; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+.nav-button.active { background-color: #FFD700; color: #006666; border-color: #FFA500; font-weight: bold; }
+main { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; }
+.content-box { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+h2 { color: #008B8B; font-size: 2rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #20B2AA; }
+h3 { color: #006666; font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 1rem; }
+.resources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.resource-card { background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%); padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+.resource-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.resource-title { font-size: 1.2rem; font-weight: bold; color: #006666; margin-bottom: 0.5rem; }
+.resource-link { color: #008B8B; text-decoration: none; font-weight: 500; word-break: break-all; }
+.resource-link:hover { color: #20B2AA; text-decoration: underline; }
+.intro-text { font-size: 1.1rem; line-height: 1.8; text-align: justify; margin-bottom: 1.5rem; }
+.warning { background-color: #FFE5E5; padding: 1rem; border-left: 4px solid #FF6B6B; border-radius: 5px; margin: 1rem 0; }
+.important-note { background-color: #E0F7FA; padding: 1rem; border-left: 4px solid #008B8B; border-radius: 5px; margin: 1rem 0; }
+.highlight { background-color: #FFFACD; padding: 1.5rem; border-left: 4px solid #FFD700; border-radius: 5px; margin: 1.5rem 0; font-style: italic; }
+footer { background-color: #006666; color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+.footer-content { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+ul { margin-left: 2rem; margin-top: 1rem; }
+li { margin-bottom: 0.5rem; }
+strong { color: #008B8B; }
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    .nav-container { flex-direction: column; }
+    .nav-button { width: 100%; text-align: center; }
+    .resources-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Ressources</h1>
+            <p class="subtitle">Sites, documentation et outils pour votre préparation</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="prepa-index.html" class="nav-button">Accueil</a>
+            <a href="prepa-association.html" class="nav-button">L'Association</a>
+            <a href="prepa-programme.html" class="nav-button">Le Programme</a>
+            <a href="prepa-modalites.html" class="nav-button">Modalités</a>
+            <a href="prepa-modules.html" class="nav-button">Les Modules</a>
+            <a href="prepa-ressources.html" class="nav-button active">Ressources</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <h2>Sites essentiels à visiter immédiatement</h2>
+            
+            <div class="warning">
+                <p>⚠️ <strong>Important :</strong> Consultez régulièrement ces sites officiels car les informations peuvent évoluer !</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Sciences Po et IEP</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">🎓 Sciences Po Paris</div>
+                    <a href="https://www.sciencespo.fr/fr/" target="_blank" class="resource-link">www.sciencespo.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🎓 Réseau 7 IEP - Concours commun</div>
+                    <a href="https://www.reseau-scpo.fr/concourscommun-2025-date-themes" target="_blank" class="resource-link">www.reseau-scpo.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🎓 IEP de Bordeaux</div>
+                    <a href="https://www.sciencespobordeaux.fr/fr/index.html" target="_blank" class="resource-link">www.sciencespobordeaux.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🎓 IEP de Grenoble</div>
+                    <a href="https://www.sciencespo-grenoble.fr/lacces-en-1ere-annee" target="_blank" class="resource-link">www.sciencespo-grenoble.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🎓 IEP Fontainebleau</div>
+                    <a href="https://iep-fontainebleau.u-pec.fr/" target="_blank" class="resource-link">iep-fontainebleau.u-pec.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📰 Magazine des Alumni Sciences Po</div>
+                    <a href="https://www.emilemagazine.fr/" target="_blank" class="resource-link">emilemagazine.fr</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Institutions françaises</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">🏛️ Vie publique (Service du 1er ministre)</div>
+                    <a href="https://www.vie-publique.fr/" target="_blank" class="resource-link">www.vie-publique.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">⚖️ Le Conseil d'État</div>
+                    <a href="https://www.conseil-etat.fr/qui-sommes-nous/le-conseil-detat" target="_blank" class="resource-link">www.conseil-etat.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">⚖️ Le Conseil Constitutionnel</div>
+                    <a href="https://www.conseil-constitutionnel.fr/" target="_blank" class="resource-link">www.conseil-constitutionnel.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">💰 La Cour des Comptes</div>
+                    <a href="https://www.ccomptes.fr/fr" target="_blank" class="resource-link">www.ccomptes.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">⚖️ Cour de Cassation</div>
+                    <a href="https://www.courdecassation.fr/" target="_blank" class="resource-link">www.courdecassation.fr</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Institutions européennes et internationales</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">🇪🇺 Union Européenne</div>
+                    <a href="https://european-union.europa.eu/index_fr" target="_blank" class="resource-link">european-union.europa.eu</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🇪🇺 Conseil de l'Europe</div>
+                    <a href="https://www.coe.int/fr/web/portal" target="_blank" class="resource-link">www.coe.int</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🌍 Institut Français des Relations Internationales (IFRI)</div>
+                    <a href="https://www.ifri.org/en" target="_blank" class="resource-link">www.ifri.org</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Think Tanks et recherche</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">💭 Institut de Recherche et d'Information sur la Sécurité (IRIS)</div>
+                    <a href="https://www.iris-france.org/" target="_blank" class="resource-link">www.iris-france.org</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">💭 Fondation pour l'innovation politique (Fondapol)</div>
+                    <a href="https://www.fondapol.org/" target="_blank" class="resource-link">www.fondapol.org</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">💭 Institut Montaigne</div>
+                    <a href="https://www.institutmontaigne.org/" target="_blank" class="resource-link">www.institutmontaigne.org</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">💭 Terra Nova</div>
+                    <a href="https://tnova.fr/" target="_blank" class="resource-link">tnova.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📚 Collège de France</div>
+                    <a href="https://www.college-de-france.fr/fr" target="_blank" class="resource-link">www.college-de-france.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📚 Presses de Sciences Po</div>
+                    <a href="https://www.pressesdesciencespo.fr/fr/" target="_blank" class="resource-link">www.pressesdesciencespo.fr</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Presse et médias</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">📰 Le Monde</div>
+                    <a href="https://www.lemonde.fr/" target="_blank" class="resource-link">www.lemonde.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📰 Le Monde diplomatique</div>
+                    <a href="https://www.lemonde-diplomatique.fr/" target="_blank" class="resource-link">www.lemonde-diplomatique.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📰 Le Figaro</div>
+                    <a href="https://www.lefigaro.fr/" target="_blank" class="resource-link">www.lefigaro.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📰 Le Point</div>
+                    <a href="https://www.lepoint.fr/" target="_blank" class="resource-link">www.lepoint.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📰 La Croix</div>
+                    <a href="https://www.la-croix.com/" target="_blank" class="resource-link">www.la-croix.com</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📻 France Culture</div>
+                    <a href="https://www.radiofrance.fr/franceculture" target="_blank" class="resource-link">www.radiofrance.fr/franceculture</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📻 Radio Classique</div>
+                    <a href="https://www.radioclassique.fr/" target="_blank" class="resource-link">www.radioclassique.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🌐 Agence Reuters</div>
+                    <a href="https://www.reuters.com/" target="_blank" class="resource-link">www.reuters.com</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📖 Revue Esprit</div>
+                    <a href="https://esprit.presse.fr/" target="_blank" class="resource-link">esprit.presse.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📖 Revue Europe</div>
+                    <a href="https://www.europe-revue.net/" target="_blank" class="resource-link">www.europe-revue.net</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Ressources documentaires et bibliothèques</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">📚 Bibliothèque Nationale de France - Essentiels</div>
+                    <a href="https://essentiels.bnf.fr/fr/" target="_blank" class="resource-link">essentiels.bnf.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📚 BNF - Gallica (collections numérisées)</div>
+                    <a href="https://gallica.bnf.fr/accueil/fr/html/accueil-fr" target="_blank" class="resource-link">gallica.bnf.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📚 RetroNews (presse ancienne BNF)</div>
+                    <a href="https://www.retronews.fr/" target="_blank" class="resource-link">www.retronews.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📚 Classiques UQAM (téléchargement gratuit)</div>
+                    <a href="https://classiques.uqam.ca/" target="_blank" class="resource-link">classiques.uqam.ca</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">📖 Encyclopédie d'Histoire Numérique de l'Europe</div>
+                    <a href="https://ehne.fr/fr" target="_blank" class="resource-link">ehne.fr</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🗺️ Histoire à la carte</div>
+                    <a href="https://www.histoirealacarte.com/" target="_blank" class="resource-link">www.histoirealacarte.com</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🖼️ L'Histoire par l'image</div>
+                    <a href="https://histoire-image.org/" target="_blank" class="resource-link">histoire-image.org</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Économie et finances</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">💰 FIPECO (François Ecalle)</div>
+                    <a href="http://fipeco.fr/apropos" target="_blank" class="resource-link">fipeco.fr</a>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Excellent site d'analyse des finances publiques</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Outils et traduction</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">🔤 Reverso (traduction)</div>
+                    <a href="https://www.reverso.net/traduction-texte" target="_blank" class="resource-link">www.reverso.net</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-title">🤖 YiAho (IA - avec précaution)</div>
+                    <a href="https://www.yiaho.com/discussion-libre/" target="_blank" class="resource-link">www.yiaho.com</a>
+                </div>
+            </div>
+
+            <div class="warning">
+                <p><strong>⚠️ Attention à l'IA !</strong></p>
+                <p>L'IA c'est un peu comme la langue d'Ésope : le meilleur et le pire ! Ou comme Wikipédia mais en pire encore : truffé d'erreurs !!!! Avec en exergue le pré-supposé fallacieux d'une infaillibilité supérieure au cerveau humain !!!</p>
+                <p><em>Exemple : Demandez à l'IA de vous parler de l'armistice du 8 mai 1945 et vous obtiendrez un bel exposé. Or il n'y a pas d'armistice le 8 mai 1945 mais une capitulation sans condition de l'Allemagne nazie...</em></p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Magazine jeunesse recommandé</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-title">📖 Phosphore (Bayard Jeunesse)</div>
+                    <a href="https://www.phosphore.com/" target="_blank" class="resource-link">www.phosphore.com</a>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">Un bon titre pour les lycéens</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Bibliographie immédiate</h2>
+            
+            <div class="intro-text">
+                <h3>📚 Ouvrages recommandés</h3>
+                <ul>
+                    <li><strong>« Émile Boutmy, le père de Sciences Po »</strong> - François et Renaud Leblond</li>
+                    <li><strong>« Sciences Po : Histoire d'une réussite »</strong> - Gérard Vincent & Olivier Orban</li>
+                    <li><strong>« Sciences Po pour les Nuls »</strong> - Anne-Sophie Beauvais & Pascal Cauchy<br>
+                    <em>Préface de Frédéric Mion</em></li>
+                    <li><strong>Magazine Émile</strong> - Le magazine des Sciences Po Alumni (n°30)</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <p>Ces ouvrages vous permettront de mieux comprendre l'histoire et l'esprit de Sciences Po, éléments essentiels pour réussir votre oral d'admission.</p>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <h2>Conseils d'utilisation</h2>
+            
+            <div class="important-note">
+                <h3>📌 Comment utiliser ces ressources efficacement ?</h3>
+                <ul>
+                    <li><strong>Quotidiennement</strong> : Consultez au moins un média d'actualité (Le Monde, France Culture, etc.)</li>
+                    <li><strong>Hebdomadairement</strong> : Explorez les sites institutionnels et les think tanks pour approfondir les sujets d'actualité</li>
+                    <li><strong>Régulièrement</strong> : Utilisez les ressources de la BNF et les bibliothèques numériques pour vos recherches approfondies</li>
+                    <li><strong>Méthodiquement</strong> : Croisez toujours vos sources - ne vous fiez jamais à une seule source d'information</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <p><strong>La triangulation des sources</strong> : Une compétence essentielle enseignée dans notre Module 1. Ne faites jamais confiance à une source unique, surtout pas Wikipédia ou l'IA !</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Fiche Technique - Préparation à Sciences Po</p>
+            <p>Propriété intellectuelle & © KES - V240-925</p>
+            <p>Prépa Sciences Po - Komensky Elite Switzerland</p>
+        </div>
+    </footer>
+</body>
+</html>
